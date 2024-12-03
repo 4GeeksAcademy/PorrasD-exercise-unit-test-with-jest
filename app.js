@@ -10,9 +10,7 @@ function fromEuroToDollar(euros) {
 }
 
 function fromDollarToYen(dollars) {
-    let euros = dollars / oneEuroIs["USD"]; 
-    let yen = euros * oneEuroIs["JPY"];    
-        return yen;
+    return dollars * 156.5;  
 }
 
 function sum(num1, num2) {
@@ -24,4 +22,4 @@ function fromYenToPound(yen) {
     let pounds = euros * oneEuroIs["GBP"];  
     return pounds;
 }
-module.exports= {sum, fromEuroToDollar}
+module.exports= {sum, fromEuroToDollar, fromDollarToYen, fromYenToPound}
